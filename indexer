@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+$application = new \Symfony\Component\Console\Application();
+$application->setName('Tests');
+$application->setVersion(json_decode(file_get_contents(__DIR__ . '/composer.json'))->version);
+$application->add(new \aggardo\commands\PipeCommand());
+$application->add(new \aggardo\commands\IndexCommand());
+$application->run();

@@ -1,0 +1,26 @@
+{
+    "name": "aggardo/rutrackermirror",
+    "description": "RuTracker Mirror",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Borro",
+            "email": "borro@aggardo.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "symfony/console": "^2.7"
+    },
+    "require-dev": {
+        "phpro/grumphp": "^0.5.2",
+        "squizlabs/php_codesniffer": "^2.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "aggardo\\": "src"
+        }
+    }
+}
